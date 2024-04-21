@@ -327,7 +327,7 @@ bool STM32_CAN::write(CAN_message_t &CAN_tx_msg, bool sendMB)
     }
     else { ret = false; }
   }
-  __HAL_CAN_ENABLE_IT(n_pCanHandle, CAN_IT_TX_MAILBOX_EMPTY);
+  // __HAL_CAN_ENABLE_IT(n_pCanHandle, CAN_IT_TX_MAILBOX_EMPTY);
   return ret;
 }
 
